@@ -56,12 +56,12 @@ function SinglePost() {
           <div className=" flex  flex-col text-center mt-[50px]">
             <h1 className="md:text-4xl text-xl mb-[75px]">{post.title}</h1>
             <img
-              className="max-h-[250px]  rounded max-w-fit  m-auto"
+              className="max-h-[250px] w-full object-cover md:max-w-fit  m-auto"
               src={`${post?.imageUrl}`}
               alt="post image"
             />
             <div className="m-auto gap-[20px] flex justify-between">
-              <h3 className=" p-2">By: {post.userPosted}</h3>
+              <h3 className="mt-4 p-2">By: {post.userPosted}</h3>
               {currentUser?.id === post.authorId && (
                 <>
                   <Link
@@ -77,7 +77,9 @@ function SinglePost() {
                 </>
               )}
             </div>
-            <p className="mt-4">Posted {moment(post.createdAt).fromNow()}</p>
+            <p className=" mb-4 mt-2">
+              Posted {moment(post.createdAt).fromNow()}
+            </p>
           </div>
           <div className=" m-auto w-fit leading-6  justify-center text-center border-black">
             <p
