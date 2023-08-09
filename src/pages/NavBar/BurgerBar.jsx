@@ -22,12 +22,17 @@ function BurgerBar() {
     navigate(`/users/${currentUser?.id}`);
   };
 
+  const handleHome = () => {
+    navigate('/')
+  };
+
   const handleLogout = async (e) => {
     await logout();
     navigate('/login');
   };
 
   const handleLogin = () => {
+    setShowModal(false);
     navigate('/login');
   };
 
@@ -69,7 +74,7 @@ function BurgerBar() {
                       </button>
                       <button
                         className="hover:text-gray-500 duration-500 transition-all drop-shadow-xl  h-[40px] w-[70px] text-black hover:bg-green-500 p-2 rounded no-underline"
-                        onClick={() => setShowModal(false)}
+                        onClick={handleLogin}
                       >
                         Login
                       </button>
@@ -83,7 +88,10 @@ function BurgerBar() {
             <div className="md:static absolute md:min-h-fit bg-white min-h-[60vh] md:w-auto left-0 top-[16%] w-full flex items-center px-5   ">
               <ul className="flex md:flex-row text-xl md:text-[18px] flex-col md:items-center mt-[20px] list-none gap-8 md:gap-[4vw]">
                 <li>
-                  <button className="hover:text-gray-500 duration-500 transition-all drop-shadow-xl  h-[40px] w-[70px] text-black hover:bg-match-orange p-2 rounded no-underline">
+                  <button  onClick={
+                      currentUser ? handleHome : () => setShowModal(true)
+                    }
+                    className="hover:text-gray-500 duration-500 transition-all drop-shadow-xl  h-[40px] w-[70px] text-black hover:bg-match-orange p-2 rounded no-underline">
                     Home
                   </button>
                 </li>
