@@ -1,5 +1,5 @@
 # TechNext
-Fullstack Blog web application built using React, Node, and MySQL. 
+Fullstack Blog web application built using React, Node, S3, and MYSQL database.
 This project was built with the intent of creating a web application that connects to a local MYSQL database. 
 As well as work on deployment of a fullstack application using a Node.js server.
 
