@@ -9,7 +9,7 @@ Deployed application URL: https://blog-app-production-0df7.up.railway.app/
 
 Login Information
 
-username: test
+username: test3
 password: Thisisfortesting2@
 
 Features: 
