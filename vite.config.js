@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': 'http://localhost:5001',
+      '/api': 'https://blog-app-api-production-e6ae.up.railway.app',
     },
     watch: {
       usePolling: true,
