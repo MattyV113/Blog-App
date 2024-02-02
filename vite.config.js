@@ -6,14 +6,14 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': 'http://localhost:5000',
+      '/api': 'http://localhost:5001',
     },
     watch: {
       usePolling: true,
     },
     host: true, // needed for the Docker Container port mapping to work
     strictPort: true,
-    port: 5173,
+    port: 5174,
     build: {
       assetsInlineLimit: '2048',
       outDir: 'build',

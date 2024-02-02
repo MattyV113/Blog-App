@@ -83,9 +83,12 @@ function BurgerBar() {
             <div className="md:static absolute md:min-h-fit bg-white min-h-[60vh] md:w-auto left-0 top-[16%] w-full flex items-center px-5   ">
               <ul className="flex md:flex-row text-xl md:text-[18px] flex-col md:items-center mt-[20px] list-none gap-8 md:gap-[4vw]">
                 <li>
-                  <button className="hover:text-gray-500 duration-500 transition-all drop-shadow-xl  h-[40px] w-[70px] text-black hover:bg-match-orange p-2 rounded no-underline">
+                  <Link
+                    to="/"
+                    className="hover:text-gray-500 duration-500 transition-all drop-shadow-xl  h-[40px] w-[70px] text-black hover:bg-match-orange p-2 rounded no-underline"
+                  >
                     Home
-                  </button>
+                  </Link>
                 </li>
                 <li>
                   <button
