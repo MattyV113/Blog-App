@@ -4,13 +4,13 @@ This project was built with the intent of creating a web application that connec
 As well as work on deployment of a fullstack application using a Node.js server.
 
 
-Deployed application URL: 
+Deployed application URL: https://blog-app-production-9068.up.railway.app/
 
 
 Login Information:
 
 username: test
-password: test
+password: Testing1234$
 
 Features: 
 
